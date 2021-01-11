@@ -6,6 +6,7 @@
     <title>Document</title>
     <script src='https://unpkg.com/tesseract.js@v2.1.0/dist/tesseract.min.js'></script>
 
+    <input type="file">
 </head>
 <body>
     <script>
@@ -15,6 +16,7 @@
   { logger: m => console.log(m) }
 ).then(({ data: { text } }) => {
   console.log(text);
+  document.write(text);
 })
     </script>
     
